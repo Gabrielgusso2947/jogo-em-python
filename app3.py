@@ -1,4 +1,3 @@
-#python
 # Jogo da Velha (Tic Tac Toe) em Python
 
 # Tabuleiro representado por uma lista de 9 posições (inicialmente vazias)
@@ -27,7 +26,7 @@ def print_board():
 def player_move(icon):
     """
     Gerencia a jogada de um participante
-    :para icon: 'X' ou 'O' - símbolo do jogador atual
+    :param icon: 'X' ou 'O' - símbolo do jogador atual
     """
     # Determina o número do jogador baseado no símbolo
     if icon == 'X':
@@ -70,8 +69,6 @@ def is_victory(icon):
         (board[1] == icon and board[4] == icon and board[7] == icon) or
         (board[2] == icon and board[5] == icon and board[8] == icon) or
         
-print("Último elemento:", array [-1])
-
         # Vitórias diagonais
         (board[0] == icon and board[4] == icon and board[8] == icon) or
         (board[2] == icon and board[4] == icon and board[6] == icon)
@@ -101,4 +98,4 @@ while True:
     if is_victory('O'):
         print_board()
         print("Jogador 2 (O) venceu! Parabéns!")
-        break   
+        break
